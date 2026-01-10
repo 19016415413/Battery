@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Dataset | JES-115701 | Lumen Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Literata:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --accent: #125599;
+      --accent-soft: #e5efff;
+      --text: #1f2633;
+      --muted: #5b6372;
+      --border: #d7e0ec;
+      --shadow: 0 18px 50px -32px rgba(18,85,153,0.55);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(160deg, #eef4ff 0%, #ffffff 40%, #f6f8fb 100%);
+      color: var(--text);
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.65;
+    }
+    header { border-bottom: 1px solid var(--border); background: #ffffffea; backdrop-filter: blur(6px); position: sticky; top: 0; z-index: 10; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 22px; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 0; }
+    .brand { display: flex; flex-direction: column; gap: 4px; }
+    .journal { font-family: 'Literata', Georgia, serif; font-size: 22px; letter-spacing: 0.02em; }
+    .sub { color: var(--muted); font-size: 14px; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 12px; background: #e8f6ed; color: #2f8f47; font-weight: 700; border: 1px solid #cee6d6; }
+    main { padding: 32px 0 76px; }
+    .hero { background: var(--panel); border: 1px solid var(--border); border-radius: 18px; padding: 28px; box-shadow: var(--shadow); }
+    h1 { margin: 0 0 10px; font-family: 'Literata', Georgia, serif; font-size: 32px; }
+    p.lead { margin: 6px 0 0; color: var(--muted); max-width: 760px; }
+    .meta { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .tag { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 10px; background: #eef2f7; color: #37445b; font-weight: 600; font-size: 13px; }
+    .cta { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-radius: 10px; text-decoration: none; font-weight: 700; border: 1px solid transparent; transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease; }
+    .primary { background: var(--accent); color: #fff; box-shadow: 0 12px 32px -20px rgba(18,85,153,0.8); }
+    .ghost { background: var(--accent-soft); color: var(--accent); border-color: #c7d8f6; }
+    .btn:hover { transform: translateY(-1px); }
+    .split { margin-top: 22px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 16px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow: 0 12px 26px -26px rgba(0,0,0,0.32); }
+    .card h3 { margin: 0 0 6px; font-family: 'Literata', Georgia, serif; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .table { margin-top: 24px; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+    th { background: #f1f4fa; font-weight: 700; color: #2b3a50; }
+    tbody tr:hover { background: #f8fbff; }
+    .guide { margin-top: 22px; padding: 18px; border-radius: 14px; background: #eef5ff; border: 1px dashed #c4d8f7; }
+    .guide h3 { margin: 0 0 6px; font-family: 'Literata', Georgia, serif; }
+    .guide ul { margin: 8px 0 0 18px; color: var(--muted); }
+    footer { margin-top: 32px; padding: 18px 0 30px; text-align: center; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
+    @media (max-width: 860px) { .split { grid-template-columns: 1fr; } .top { flex-direction: column; align-items: flex-start; } .cta { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">
+        <div class="journal">Journal of The Electrochemical Society</div>
+        <div class="sub">Manuscript ID JES-115701 · Personal Archive</div>
+      </div>
+      <div class="badge">Open Data · Public Release</div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Personal Archive · Open Dataset</h1>
+      <p class="lead">Privately maintained repository for manuscript JES-115701, supporting peer review, replication, and citation with a clear, lightweight presentation.</p>
+      <div class="meta">
+        <span class="tag">Version 1.0</span>
+        <span class="tag">Updated: 2025-07-30</span>
+        <span class="tag">License: CC BY 4.0</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#download">Download All (.zip)</a>
+      </div>
+    </section>
+
+    <div class="split">
+      <div class="card"><h3>Scope</h3><p>Cycling, electrochemical impedance, and processed tables mapped to manuscript experiments.</p></div>
+      <div class="card"><h3>Provenance</h3><p>Personal lab logs including instrument setup, calibration, and environment conditions for traceability.</p></div>
+      <div class="card"><h3>Access</h3><p>Open access; cite the manuscript ID and version.</p></div>
+      <div class="card"><h3>Contact</h3><p><a href="mailto:19016415413@163.com">19016415413@163.com</a> · feedback and corrections.</p></div>
+    </div>
+
+    <section class="table" id="download">
+      <table>
+        <thead><tr><th>Dataset</th><th>Description</th><th>Size</th><th>Format</th><th>Access</th></tr></thead>
+        <tbody>
+          <tr><td>Batch B0005</td><td>Cycling performance and EIS curves (B0005).</td><td>15.2 MB</td><td>.mat</td><td><a href="B0005.mat" download>Download</a></td></tr>
+          <tr><td>Batch B0006</td><td>Cycling performance and EIS curves (B0006).</td><td>15.3 MB</td><td>.mat</td><td><a href="B0006.mat" download>Download</a></td></tr>
+          <tr><td>Batch B0007</td><td>Cycling performance and EIS curves (B0007).</td><td>15.4 MB</td><td>.mat</td><td><a href="B0007.mat" download>Download</a></td></tr>
+          <tr><td>Batch B0018</td><td>Cycling performance and EIS curves (B0018).</td><td>8.5 MB</td><td>.mat</td><td><a href="B0018.mat" download>Download</a></td></tr>
+          <tr><td>SHAP Analysis</td><td>Feature attributions for model R9B5.</td><td>85.7 KB</td><td>.m</td><td><a href="R9B5SHAP.m" download>Download</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="guide" id="upload">
+      <h3>Citation Notes</h3>
+      <ul>
+        <li>Cite: “Journal of The Electrochemical Society, Manuscript ID JES-115701.”</li>
+        <li>Include dataset version and access date (e.g., v1.0, accessed 2025-07-30).</li>
+        <li>License: CC BY 4.0; attribute authors and link back when possible.</li>
+        <li>Contact for clarifications: <a href="mailto:19016415413@163.com">19016415413@163.com</a>.</li>
+      </ul>
+    </section>
+
+    <footer>Open Data · Public Release · JES-115701 · Personal Archive</footer>
+  </main>
+</body>
+</html>
